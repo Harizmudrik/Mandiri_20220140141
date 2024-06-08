@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: inline;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+
+.post {
+  flex-grow: 1;
+  box-sizing: border-box;
+  flex-basis: 33.3%;
+  transition: all 200ms ease-out;
+  border-radius: 20px;
+}
+
+.hover-gold:hover {
+  box-shadow: 0 0 6px #CC9544;
+}
+
+
+footer {
+  text-align: center;
+}
+
+button {
+  border: 0;
+  background: none;
+  font-size: 1.3em;
+  margin: 10px 5px;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited {
+  text-decoration: none;
+  color: purple;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+a:active {
+  text-decoration: none;
+  color: green;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.footer {
+  background-color: #1C0A00;
+  color: #FFF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.credits a {
+  color: #FFCC29;
+  text-decoration: none;
+}
+
+.credits a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+
+#content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Basic styles for the transparent cards */
+.transparent-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive card width */
+.transparent-card {
+  width: 90%; /* Default width for small screens */
+}
+
+@media (min-width: 576px) {
+  .transparent-card {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .transparent-card {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .transparent-card {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .transparent-card {
+    width: 50%;
+  }
+}
+
+/* Style for the video background */
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+
